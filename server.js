@@ -40,13 +40,13 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
   }
 
   app.get("/contacts", function(req, res) {
-    db.collection(CONTACTS_COLLECTION).find({}).toArray(function(err, docs) {
-      if (err) {
-        handleError(res, err.message, "Failed to get contacts");
-      } else {
-        res.status(200).json(docs);
-      }
-    });
+    // db.collection(CONTACTS_COLLECTION).find({}).toArray(function(err, docs) {
+    //   if (err) {
+    //     handleError(res, err.message, "Failed to get contacts");
+    //   } else {
+    //     res.status(200).json(docs);
+    //   }
+    // });
   });
 
   app.post("/contacts", function(req, res) {
