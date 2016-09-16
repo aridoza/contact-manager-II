@@ -16,8 +16,11 @@
     "Express",
     "Angular"
   ],
-  "author": "",
-  "license": "",
+  "author": "Ariel Mendoza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aridoza/contact-manager-app/issues"
+  },
   "homepage": "https://github.com/aridoza/contact-manager-app",
   "dependencies": {
     "body-parser": "^1.13.3",
