@@ -10,6 +10,10 @@ angular.module("contactsApp", ['ngRoute'])
             }
           }
         })
+        .when("/new/contact", {
+          controller: "NewContactController",
+          templateUrl: "contact-form.html"
+        })
         .when("/contact/:contactId", {
           controller: "EditContactController",
           templateUrl: "contact.html"
