@@ -3,7 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
 const ObjectID = mongodb.ObjectID;
-const MONGOLAB_URI= 'mongodb://<aridoza>:<testingalpha>@ds033106.mlab.com:33106/heroku_sm4hhq85';
+const MONGOLAB_URI= 'mongodb://<heroku_sm4hhq85>:<testingalpha>@ds033106.mlab.com:33106/heroku_sm4hhq85';
 
 const CONTACTS_COLLECTION = "contacts";
 
