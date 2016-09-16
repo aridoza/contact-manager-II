@@ -22,7 +22,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
   }
 
   // Save the database object from the callback for reuse
-  db = database;
+   const db = database;
   console.log("Database connection ready");
 
   // Initialize the app
