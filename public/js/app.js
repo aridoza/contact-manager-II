@@ -71,7 +71,7 @@ angular.module("contactsApp", ['ngRoute'])
     })
     .controller("NewContactController", function($scope, $location, Contacts) {
       $scope.back = function() {
-        $location.path(#/);
+        $location.path("#/");
       }
 
       $scope.saveContact = function(contact) {
