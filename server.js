@@ -41,7 +41,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
   }
 
   app.get("/contacts", function(req, res) {
-    db.collection(CONTACTS_COLLECTION).find({}).toArray(function(err, docs) {
+    db.CONTACTS_COLLECTION.find({}).toArray(function(err, docs) {
       if (err) {
         handleError(res, err.message, "Failed to get contacts");
       } else {
