@@ -3,7 +3,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
 const ObjectID = mongodb.ObjectID;
-// const MONGODB_URI= 'mongodb://heroku_sm4hhq85:4nv49976epor4bbac13u8cm9nt@ds033106.mlab.com:33106/heroku_sm4hhq85';
 
 const CONTACTS_COLLECTION = "contacts";
 
@@ -41,7 +40,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
   }
 
   app.get("/contacts", function(req, res) {
-    db.CONTACTS_COLLECTION.find({}).toArray(function(err, docs) {
+    db.collection(CONTACTS_COLLECTION).find({}).toArray(function(err, docs) {
       if (err) {
         handleError(res, err.message, "Failed to get contacts");
       } else {
@@ -58,7 +57,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
       handleError(res, "Invalid user input", "Must provide a first or last name", 400);
     }
 
-    db.CONTACTS_COLLECTION.insertOne(newContact, function(err, doc) {
+    db.collection(CONTACTS_COLLECTION).insertOne(newContact, function(err, doc) {
       if (err) {
         handleError(res, err.message, "Failed to create new contact");
       } else {
