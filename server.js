@@ -58,7 +58,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
       handleError(res, "Invalid user input", "Must provide a first or last name", 400);
     }
 
-    db.collection(CONTACTS_COLLECTION).insertOne(newContact, function(err, doc) {
+    db.CONTACTS_COLLECTION.insertOne(newContact, function(err, doc) {
       if (err) {
         handleError(res, err.message, "Failed to create new contact");
       } else {
