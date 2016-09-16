@@ -4,5 +4,5 @@
   "repository": "https://github.com/aridoza/contact-manager-app",
   "logo": "https://mlab.com/company/brand/resources/mLab-logo-onlight.png",
   "keywords": ["node", "express", "angular", "MEAN", "mongodb", "REST", "API"],
-  "addons": ["mongolab"]
+  "addons": ["mlab"]
 }
