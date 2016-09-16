@@ -3,7 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
 const ObjectID = mongodb.ObjectID;
-const MONGOLAB_URI= 'mongodb://aridozahero:testingalpha1@ds033106.mlab.com:33106/heroku_sm4hhq85';
+const MONGODB_URI= 'mongodb://heroku_sm4hhq85:4nv49976epor4bbac13u8cm9nt@ds033106.mlab.com:33106/heroku_sm4hhq85';
 
 const CONTACTS_COLLECTION = "contacts";
 
@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 const db;
 
 // Connect to the database before starting the application server
-mongodb.MongoClient.connect(process.env.MONGOLAB_URI, function (err, database) {
+mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
   if (err){
     console.log(err);
     process.exit(1);
