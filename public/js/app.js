@@ -24,8 +24,8 @@ angular.module("contactsApp", ['ngRoute'])
     })
     .service("Contacts", function($http) {
       this.getContacts = function() {
-        return $http.get("/contacts")
-          .then(function(response) {
+        return $http.get("/contacts").
+          then(function(response) {
             return response;
           }, function(response) {
               alert("Error finding contacts");
