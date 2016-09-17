@@ -9,21 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aridoza/contact-manager-II.git"
+    "url": "https://github.com/chrisckchang/mean-contactlist.git"
   },
   "keywords": [
     "MEAN",
     "Express",
     "Angular"
   ],
-  "author": "Ariel Mendoza",
+  "author": "Chris Chang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aridoza/contact-manager-II/issues"
+    "url": "https://github.com/chrisckchang/mean-contactlist/issues"
   },
-  "homepage": "https://github.com/aridoza/contact-manager-II",
+  "homepage": "https://github.com/chrisckchang/mean-contactlist",
   "dependencies": {
-    "angular": "1.2.10",
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
     "mongodb": "^2.0.43"
