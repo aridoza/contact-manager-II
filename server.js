@@ -23,7 +23,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
   // Save the database object from the callback for reuse
   db = database;
   console.log("Database connection ready");
-  console.log("Database:", database);
+  console.log("Database:", database.collection);
 
   // Initialize the app
   const server = app.listen(process.env.PORT || 8080, function() {
@@ -46,6 +46,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
         handleError(res, err.message, "Failed to get contacts");
       } else {
         res.status(200).json(docs);
+        console.log("GET FOR ALL CONTACTS: ", res.json(docs));
       }
     });
   });
