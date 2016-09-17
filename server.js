@@ -46,7 +46,6 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
         handleError(res, err.message, "Failed to get contacts");
       } else {
         res.status(200).json(docs);
-        console.log("GET FOR ALL CONTACTS: ", res.json(docs));
       }
     });
   });

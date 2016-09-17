@@ -9,14 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aridoza/contact-manager-app.git"
+    "url": "https://github.com/aridoza/contact-manager-II.git"
   },
   "keywords": [
     "MEAN",
     "Express",
     "Angular"
   ],
-  "homepage": "https://github.com/aridoza/contact-manager-app",
+  "author": "Ariel Mendoza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aridoza/contact-manager-II/issues"
+  },
+  "homepage": "https://github.com/aridoza/contact-manager-II",
   "dependencies": {
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
