@@ -10,7 +10,7 @@ const app = express();
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
 
-// Create a database variable outside the database connection callback to reuse the connection pool in your app
+// Create a database variable outside the database connection callback to reuse the connection pool in your App
 const db;
 
 // Connect to the database before starting the application server
