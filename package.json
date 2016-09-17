@@ -7,6 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aridoza/contact-manager-app.git"
+  },
+  "keywords": [
+    "MEAN",
+    "Express",
+    "Angular"
+  ],
+  "homepage": "https://github.com/aridoza/contact-manager-app",
   "dependencies": {
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
