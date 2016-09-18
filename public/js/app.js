@@ -40,7 +40,7 @@ angular.module("contactsApp", ['ngRoute'])
           });
       }
       this.getContact = function(contactId) {
-        const url = "/contacts/" + contactId;
+        var url = "/contacts/" + contactId;
         return $http.get(url).
           then(function(response) {
             return response;
@@ -49,7 +49,7 @@ angular.module("contactsApp", ['ngRoute'])
           });
       }
       this.editContact = function(contact) {
-        const url = "/contacts/" + contact._id;
+        var url = "/contacts/" + contact._id;
         console.log(contact._id);
         return $http.put(url, contact).
           then(function(response) {
@@ -60,7 +60,7 @@ angular.module("contactsApp", ['ngRoute'])
           });
       }
       this.deleteContact = function(contactId) {
-        const url = "/contacts/" + contactId;
+        var url = "/contacts/" + contactId;
         return $http.delete(url).
           then(function(response) {
             return response;
@@ -80,7 +80,7 @@ angular.module("contactsApp", ['ngRoute'])
 
       $scope.saveContact = function(contact) {
         Contacts.createContact(contact).then(function(doc) {
-          const contactUrl = "/contact/" + doc.data._id;
+          var contactUrl = "/contact/" + doc.data._id;
           $location.path(contactUrl);
         }, function(response) {
           alert(response);
