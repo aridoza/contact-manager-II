@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/aridoza/contact-manager-II",
   "dependencies": {
+    "MEAN": "1.0.0",
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
     "mongodb": "^2.0.43"
