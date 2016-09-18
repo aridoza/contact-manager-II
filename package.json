@@ -18,12 +18,10 @@
   ],
   "author": "Ariel Mendoza",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aridoza/contact-manager-II/issues"
-  },
   "homepage": "https://github.com/aridoza/contact-manager-II",
   "dependencies": {
     "MEAN": "1.0.0",
+    "angular": "^1.4.6",
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
     "mongodb": "^2.0.43"
